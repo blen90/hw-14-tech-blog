@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { User } = require('../../Models/User.js');
+const User = require('../../Models/User.js');
 
 
 router.post('/', async (req, res) => {
   console.log("We Hit the CREATE USER ROUTE", req.body)
-  console.log("CREATE USER ROUTE RESSSSSS", res)
+  
   try {
     const newUser = await User.create({
       userName: req.body.userName,
@@ -16,7 +16,7 @@ console.log(newUser)
       req.session.userName= newUser.userName;
       req.session.loggedIn = true;
 
-      res.status(200).json(dbUserData);
+      res.status(200).json(newUser);
     });
   } catch (err) {
     console.log(err);
@@ -26,6 +26,7 @@ console.log(newUser)
 
 
 router.post('/login', async (req, res) => {
+  console.log("Were in /LOGIN USER ROUTES", req.body)
   try {
     const userData = await User.findOne({ where: { username: req.body.userName } });
 

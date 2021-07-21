@@ -1,21 +1,26 @@
 const router = require('express').Router();
+// const withAuth = require('../utils/auth');
+const User = require("../Models/User.js");
 
-// GET all galleries for homepage
-// router.get('/', async (req, res) => {
-//     try {
-//       const dbGalleryData = await Gallery.findAll({
-//         include: [
-//           {
-//             model: Painting,
-//             attributes: ['filename', 'description'],
-//           },
-//         ],
-//       });
+router.get('/', async (req, res) => {
+    console.log("Hitting logged in homepage route!!")
+    try {
+    //   const userData = await User.findAll({
+    //     attributes: { exclude: ['password'] },
+    //     order: [['name', 'ASC']],
+    //   });
+  
+    //   const users = userData.map((project) => project.get({ plain: true }));
+        
+      res.render('all-posts', {
+        User,
+        logged_in: req.session.logged_in,
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
 
-//       const galleries = dbGalleryData.map((gallery) =>
-//         gallery.get({ plain: true })
-//     }
-//       );
 
 router.get('/login', (req, res) => {
     if (req.session.logged_in) {
