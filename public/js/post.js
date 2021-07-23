@@ -14,7 +14,7 @@ const newpostHandler = async (event) => {
       console.log(response)
   
       if (response.ok) {
-        document.location.replace('/newpost');
+        document.location.replace('/post');
       } else {
         alert('Failed to fetch posts');
       }

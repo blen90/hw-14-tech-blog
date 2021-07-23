@@ -1,4 +1,12 @@
 <div class="card">
-<div class="card-title">All Posts
+<div class="card-title all-posts">All Posts
 </div>
 </div>
+
+<ul class="posts">
+  {{#each posts as |post|}}
+  <li>
+    {{> post-info post }}
+  </li>
+  {{/each}}
+</ul>
