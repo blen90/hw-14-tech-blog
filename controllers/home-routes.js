@@ -1,16 +1,11 @@
 const router = require('express').Router();
 // const withAuth = require('../utils/auth');
-const User = require("../Models/User.js");
+const { User, Post } = require("../Models");
+// const Post = require("../Models/Post.js");
 
 router.get('/', async (req, res) => {
   console.log("Hitting logged in homepage route!!")
   try {
-    //   const userData = await User.findAll({
-    //     attributes: { exclude: ['password'] },
-    //     order: [['name', 'ASC']],
-    //   });
-
-    //   const users = userData.map((project) => project.get({ plain: true }));
 
     res.render('all-posts', {
       User,
