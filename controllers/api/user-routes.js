@@ -24,9 +24,24 @@ console.log(newUser)
   }
 })
 
+// router.post('/', async (req, res) => {
+//   try{
+//     const newUser = await User.create(req.body);
+
+//     req.session.save(() => {
+//       req.session.user_id = newUser.id;
+//       req.session.logged_in = true;
+
+//       res.status(200).json(err);
+//     });
+    
+//   }catch(err){
+//     res.status(400).json(err);
+//   }
+// });
 
 router.post('/login', async (req, res) => {
-  console.log("Were in /LOGIN USER ROUTES", req.body)
+  console.log("We're in /LOGIN USER ROUTES", req.body)
   try {
     const userData = await User.findOne({ where: { username: req.body.userName } });
 
@@ -34,7 +49,8 @@ router.post('/login', async (req, res) => {
       res
         .status(400)
         .json({ message: 'Incorrect username or password, please try again' });
-      return;
+      
+        return;
     }
 
     const validPassword = await userData.checkPassword(req.body.password);
