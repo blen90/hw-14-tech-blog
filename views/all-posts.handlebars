@@ -3,10 +3,14 @@
 </div>
 </div>
 
-<ul class="posts">
-  {{#each posts as |post|}}
-  <li>
-    {{> post-info post }}
-  </li>
-  {{/each}}
-</ul>
+{{#each posts as |post|}}
+<h2>
+  <a href="/post/{{post.id}}">{{post.title}}</a>
+</h2>
+<p class="post-body">
+  {{post.post_body}}
+</p>
+<p class="post-footer">
+  {{post.user_id}} on {{post.post_date}}
+</p>
+{{/each}}
