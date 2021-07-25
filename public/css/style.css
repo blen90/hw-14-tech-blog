@@ -60,3 +60,7 @@ div.posts {
 .login-card {
     text-align: center;
 }
+
+#logout {
+    color: black;
+}
