@@ -3,19 +3,12 @@
 
 ## Screenshot of Tech Blog
 
-![Tech Blog](./assets/images/demo-screenshot.jpg)
+![Tech Blog](./assets/demo-screenshot.jpg)
 
 ---
-## Demo of the app
+## Deployed link of the app
 
-To run the app you will need to add the following command to the terminal
-
-```
-node employee.js
-```
-(Click on the image below to be redirected to the Youtube demo video)
-
-[![Tech Blog Demo](./assets/images/demo-screenshot.jpg)](https://youtu.be/SZzkB85ZCI4)
+https://aqueous-brushlands-67407.herokuapp.com/
 
 ---
 ## My task
