@@ -1,4 +1,4 @@
-//Allows logged in user to log out
+//User to log out function
 
 const logout = async () => {
   const response = await fetch('/api/users/logout', {
@@ -7,7 +7,7 @@ const logout = async () => {
   });
 
   if (response.ok) {
-    document.location.replace('/');
+    document.location.replace('/login');
   } else {
     alert(response.statusText);
   }

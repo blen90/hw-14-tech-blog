@@ -1,4 +1,4 @@
-//Allows the user to log in
+//User login function
 
 const loginFormHandler = async (event) => {
   event.preventDefault();

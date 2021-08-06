@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const User = require('../../models/User.js');
 
-// allows for creation of new users (CRUD)
+//Create new user
 router.post('/', async (req, res) => {
   console.log("We Hit the CREATE USER ROUTE", req.body)
   try {
@@ -28,7 +28,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// allows for referencing specific user by email and its password for login
+//User login
 router.post('/login', async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
@@ -63,7 +63,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// deletes session for user logout
+//User logout
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {

@@ -1,4 +1,4 @@
-// Allows the user to sign up
+// User signup function
 const signupFormHandler = async (event) => {
     event.preventDefault();
 

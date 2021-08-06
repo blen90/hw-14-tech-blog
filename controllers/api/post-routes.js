@@ -40,7 +40,7 @@ router.delete('/:id', withAuth, async (req, res) => {
   }
 });
 
-// allows for referencing specific comments by id
+//Find comments by Id
 router.get('/comments/:id', async (req, res) => {
   try{
     const commentData = await Comment.findByPk(req.params.id, {
