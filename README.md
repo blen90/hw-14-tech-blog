@@ -3,7 +3,12 @@
 
 ## Screenshot of Tech Blog
 
-![Tech Blog](./assets/demo-screenshot.jpg)
+
+![Tech Blog](./assets/demo-screenshot1.jpg)
+![Tech Blog](./assets/demo-screenshot2.jpg)
+![Tech Blog](./assets/demo-screenshot4.jpg)
+![Tech Blog](./assets/demo-screenshot3.jpg)
+
 
 ---
 ## Deployed link of the app
