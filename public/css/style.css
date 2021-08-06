@@ -1,18 +1,49 @@
 nav {
+    margin-left: 25%;
+    margin-right: 25%;
     height: 25%;
     background-color: teal;
     text-align: left;
-    padding-right: 10%px;
+    padding-right: 10%;
+    color: white;
+    font-size: 25px;
 }
 
+a{
+    color: white;
+}
 
+h1, h3{
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+}
+h2 {
+    background-color: teal;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: white;
+    /* font-size: 50px; */
+}
 
+h4 {
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: blueviolet;
+    color: white;
+}
 li {
     display:inline-block;
     text-justify: auto;
 }
 
-
+button {
+    margin-top: 2%;
+    margin-left: 45%;
+    margin-right: 45%;
+}
 /* 
 h1 {
     color: white;
@@ -21,7 +52,7 @@ h1 {
  .nav-link{
     color: white;
 } 
-.all-posts{
+.homepage{
     color:white;
 
 } */
@@ -34,33 +65,60 @@ h2 {
     text-align: center;
     /* color: white; */
 }
-div.posts {
+
+#new-post-form {
+    margin-left: 25%;
     padding-top: 2%;
     padding-bottom: 2%;
     display: flexbox;
-    background-color: rgb(73, 243, 215);
+    background-color: teal;
+    text-align: center;
     width: 50%;
   
 
 }
 
-/* label {
-    color: white;
-} */
-#new-post-form{
-    /* margin-top: 5%; */
+#post-list {
+    margin-top: 2%;
+    margin-left: 25%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flexbox;
+    background-color: blueviolet;
+    text-align: center;
+    width: 50%;
+  
+
+}
+
+p {
     text-align: center;
 }
-#post-content {
 
+.post {
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: blueviolet;
+    color: white;
+    font-size: 25px;
+}
+#post-body {
     width: 200px;
     height: 100px;
 }
 
-.login-card {
+#login-form {
+    margin-left: 25%;
+    margin-right: 25%;
     text-align: center;
 }
 
+.signup-form {  
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+
+}
 #logout {
     color: black;
 }

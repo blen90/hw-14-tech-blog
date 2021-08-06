@@ -1,0 +1,25 @@
+<h2>Welcome, {{name}}</h2>
+<h3>Create new Post:</h3>
+<form id="new-post-form">
+  <label for="post-title">Title:</label>
+  <br>
+  <input class="form-input" type="text" id="post-title" name="post-title" /> <br>
+  <br>
+  <br>
+  <label for="post-body">Description</label>
+  <br>
+  <input class="form-input" type="textarea" id="post-body" name="post-body" />
+  <br>
+  <br>
+  <button type="submit">Create post</button>
+</form>
+{{#if posts.length}}
+<div id="post-list">
+  <h3>Posts</h3>
+  {{#each posts as |post|}}
+  <h4><a href="/posts/{{post.id}}">{{post.title}}</a></h4>
+  <button data-id="{{post.id}}">Delete</button>
+  {{/each}}
+</div>
+{{/if}}
+<script src="./js/profile.js"></script>
