@@ -1,4 +1,4 @@
-# hw-14-tech-blog
+# Tech Blog
 
 
 ## Screenshot of Tech Blog
