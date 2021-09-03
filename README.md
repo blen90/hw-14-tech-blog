@@ -1,27 +1,64 @@
 # Tech Blog
 
+[![GitHub license](https://img.shields.io/badge/License-MIT-blue.svg)](https://aqueous-brushlands-67407.herokuapp.com/)
 
-## Screenshot of Tech Blog
+# Description
 
+This app is based on a CMS-style blog site similar to a Wordpress site. The user can login or signup and then add posts that they can see in their personal dashboard. 
+
+## Deployed App link 
+
+https://aqueous-brushlands-67407.herokuapp.com/
+
+## Screenshots of the app
 
 ![Tech Blog](./assets/demo-screenshot1.jpg)
 ![Tech Blog](./assets/demo-screenshot2.jpg)
 ![Tech Blog](./assets/demo-screenshot4.jpg)
 ![Tech Blog](./assets/demo-screenshot3.jpg)
 
+# Table of Contents
 
----
-## Deployed link of the app
+* [Installation](#installation)
+    
+* [Usage](#usage)
 
-https://aqueous-brushlands-67407.herokuapp.com/
+* [Technology](#technology)
 
----
-## My task
+* [License](#license)
 
-My task for this homework was to create an Tech Blog was to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. You’ll build this site completely from scratch and deploy it to Heroku. Your app will follow the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
+* [Contributors](#contributors)
 
-All the files have been coded from scratch
+* [Questions](#questions)
 
+# Installation
 
----
-### Created by Blenda Orellana
+Visit the deployed app in the following link: https://aqueous-brushlands-67407.herokuapp.com/
+
+# Usage
+
+The user can create an account, login if they already have an account and add posts that will show up in their dashboard. 
+
+# Technology
+
+* MySQL 2
+* Handlebars
+* NodeJs
+* Express
+* bcrypt
+* Sequelize
+* dotenv
+
+# License 
+
+This project is governed by: MIT License
+
+# Contributors
+
+Blenda Orellana
+
+# Questions
+
+If you have any questions about the repo or the app please feel free to contact me
+ * Email: blen.or90@gmail.com
+ * Github: https://github.com/blen90
